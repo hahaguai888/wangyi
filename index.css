@@ -1,0 +1,211 @@
+html {
+    font-size: 26.666667vw;
+}
+
+body {
+    font-size: 0.16rem;
+}
+
+/* 头部 */
+.head {
+    height: 0.43rem;
+    display: flex;
+    background-color: red;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+.head-email {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.head-email .icon-down-arrow {
+    font-size: 0.07rem;
+    margin-right: 0.14rem;
+}
+
+.head-user,
+.head-email {
+    width: 25%
+}
+
+.head-logo {
+    width: 50%;
+    text-align: center;
+}
+
+.head-logo img {
+    height: 0.21rem;
+    width: 0.42rem;
+}
+
+.head-user {
+    text-align: left;
+    padding-right: 0;
+}
+
+.head-user .icon-yonghu {
+    padding-left: 0.16rem;
+}
+
+.head-email p {
+    margin: 0 0.05rem;
+}
+
+/* active */
+.nav-first .active {
+    color: red;
+    position: relative;
+}
+
+.nav-first .active::after {
+    content: "";
+    height: 0.02rem;
+    width: 0.15rem;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0.09rem;
+}
+
+
+/*导航区域*/
+.nav {
+    background-color: #ffffff;
+    color: #2d2c32;
+    position: relative;
+}
+
+.nav-first {
+    height: 0.47rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.38rem;
+    border-top: 0.01rem solid #ededed;
+}
+
+.nav-first li {
+    font-size: 0.16rem;
+    line-height: 0.47rem;
+    /* 设置行高等于父级容器高度 */
+}
+
+/* 设置a的颜色 */
+.nav-first li a,
+.nav-second li a {
+    font-size: 0.16rem;
+    color: inherit;
+    /* 确保链接继承父元素的颜色 */
+}
+
+/* 副导航 */
+.nav-second {
+    padding: 0.08rem 0.1rem 0.12rem 0.17rem;
+    background-color: #f8f8f8;
+
+}
+
+.nav-second-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+.nav-second-list li {
+    padding: 0.05rem 0;
+}
+
+/* 箭头定位 */
+.nav .nav-more {
+    position: absolute;
+    right: 0.1rem;
+    bottom: 0.17rem;
+    color: #7a7a7a;
+    transform: rotate(180deg);
+}
+
+/* 副导航箭头反转 */
+.nav-second_close {
+
+    transform: rotate(0deg);
+    overflow: hidden;
+}
+
+/* 新闻内容 */
+.news {
+    padding: 0 0.1rem;
+}
+
+.news-title {
+    font-size: 0.18rem;
+    line-height: 0.66rem;
+}
+
+.news-item {
+    margin-bottom: 0.25rem;
+}
+
+.news-item-title {
+    width: 2.95rem;
+    line-height: 0.22rem;
+    font-size: 0.17rem;
+    margin-bottom: 0.08rem;
+    font-weight: 400;
+}
+
+.news-item-info {
+    font-size: 0.12rem;
+    color: #b3b4b6;
+}
+
+.news-item-img img {
+    width: 100%;
+    margin-top: 0.05rem;
+    margin-bottom: 0.09rem;
+}
+
+.news2-item {
+    border-top: 0.005rem #f6f7f9 solid;
+    padding: 0.1rem;
+    display: flex;
+}
+
+.news2-item-content {
+    flex-grow: 1;
+    margin-right: 0.15rem;
+}
+
+.news2-item-title {
+    line-height: 0.22rem;
+    font-size: 0.17rem;
+    margin-bottom: 0.08rem;
+    font-weight: 400;
+}
+
+.news2-item-info {
+    font-size: 0.12rem;
+    color: #b3b4b6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news2-item-img {
+    width: 1.17rem;
+}
+
+.news2-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.app {
+    color: #fb1515;
+    border: 0.005rem #fbbab8 solid;
+    border-radius: 1rem;
+    padding: 0.02rem 0.05rem;
+}
